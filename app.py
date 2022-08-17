@@ -57,6 +57,8 @@ def test():
     UpdateExpression= "SET #attrName = list_append(#attrName, :attrValue)",
     ExpressionAttributeValues= {':attrValue' : matched},
     ExpressionAttributeNames= {"#attrName": "matches"})
+
+    # Returnign the top 5 matches in a dictionary
     return dict(zip([m[0] for m in matches_sorted[:5]],[m[1] for m in matches_sorted[:5]]))
 
 app.run()
