@@ -5,3 +5,4 @@ random
 pandas
 scipy
 gql
+requests_aws4auth
