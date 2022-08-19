@@ -117,11 +117,11 @@ def test():
     matchedIds = []
     for matchId in result.keys():
         [userId, otherUserId] = str(matchId).split('_')
-        client.execute(gql(create_match_query), variables={
-                       "id": matchId, "matchUserId": otherUserId, "matchingPercentage": result[matchId][2]})
+        client.execute(gql(create_match_query), variables=json.dumps({input: {
+                       "id": matchId, "matchUserId": otherUserId, "matchingPercentage": result[matchId][2]}}))
         matchedIds.append(otherUserId)
-    client.execute(gql(update_user_query), variables={
-                   "id": userId, "matches": matchedIds})
+    client.execute(gql(update_user_query), variables=json.dumps({input: {
+                   "id": userId, "matches": matchedIds}}))
     # Returnign the top 5 matches in a dictionary
     return result
 
