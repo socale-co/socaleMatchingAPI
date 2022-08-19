@@ -37,6 +37,9 @@ def test():
     # Getting the list of active users
     userList = activeUserList.get_item(Key={'id':'default'}).get('Item')['active-users']
 
+    # Fixed the latest sub-field problem that was happening
+    userList = [u['S'] for u in userList]
+
     # Creating 10 matches by picking random people from the active user list
     matches = {}
     for i in random.choices(userList,k=10):
