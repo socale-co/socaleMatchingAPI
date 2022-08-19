@@ -98,7 +98,7 @@ def test():
         return client
     client = make_client()
 
-    # Returnign the top 5 matches in a dictionary
+    # Returning the top 5 matches in a dictionary
     return dict(zip([m[0] for m in matches_sorted[:5]], [m[1] for m in matches_sorted[:5]]))
 
 
