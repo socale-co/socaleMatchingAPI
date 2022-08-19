@@ -1,0 +1,7 @@
+flask
+boto3
+numpy
+random
+pandas
+scipy
+gq1

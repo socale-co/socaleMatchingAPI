@@ -99,6 +99,7 @@ def test():
                         fetch_schema_from_transport=True)
         return client
     client = make_client()
+
     create_match_query = """mutation MyMutation($id: ID = "", $matchUserId: ID = "", $matchingPercentage: String = "") {
                                 createMatch(input: {id: $id, matchUserId: $matchUserId, matchingPercentage: $matchingPercentage}) {
                                     id
