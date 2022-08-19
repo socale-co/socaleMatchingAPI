@@ -75,6 +75,8 @@ def test():
         headers = {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
+            "ConflictHandler": "AUTOMERGE",
+            "ConflictDetection": "VERSION",
         }
 
         aws = boto3.Session(aws_access_key_id='AKIA3CUQFIO4PZF66YUL',
@@ -97,9 +99,30 @@ def test():
                         fetch_schema_from_transport=True)
         return client
     client = make_client()
-
+    create_match_query = """mutation MyMutation($id: ID = "", $matchUserId: ID = "", $matchingPercentage: String = "") {
+                                createMatch(input: {id: $id, matchUserId: $matchUserId, matchingPercentage: $matchingPercentage}) {
+                                    id
+                                }
+                            }
+                        """
+    update_user_query = """mutation MyMutation($matches: [String] = "", $id: ID = "") {
+                                updateUser(input: {matches: $matches, id: $id}) {
+                                    matches
+                                }
+                            }
+                        """
+    result = dict(zip([m[0] for m in matches_sorted[:5]], [m[1]
+                  for m in matches_sorted[:5]]))
+    matchedIds = []
+    for matchId in result.keys():
+        [userId, otherUserId] = str(matchId).split('_')
+        client.execute(gql(create_match_query), variables={
+                       "id": matchId, "matchUserId": otherUserId, "matchingPercentage": result[matchId][2]})
+        matchedIds.append(otherUserId)
+    client.execute(gql(update_user_query), variables={
+                   "id": userId, "matches": matchedIds})
     # Returnign the top 5 matches in a dictionary
-    return dict(zip([m[0] for m in matches_sorted[:5]], [m[1] for m in matches_sorted[:5]]))
+    return result
 
 
 app.run()
