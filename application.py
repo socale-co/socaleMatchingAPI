@@ -38,7 +38,6 @@ def test():
 
     # Getting the parent User
     parentUser = table.get_item(Key={'id': parentUserId}).get('Item')
-    print(parentUser)
 
     # Getting the table for all active users
     activeUserList = dynamoDBResource.Table('active-user-list')
@@ -54,8 +53,12 @@ def test():
     matches = {}
     for i in random.choices(userList, k=10):
         user2 = table.get_item(Key={'id': i}).get('Item')
+        if user2 == None:
+            continue
         matches[parentUserId+'_'+i] = Algo().master_function(parentUser, user2)
 
+    print("Matches \n ----------------------")
+    print(matches)
     # Sorting the list of matches
     matches_sorted = sorted(
         matches.items(), key=lambda x: x[1][0], reverse=True)
@@ -116,6 +119,7 @@ def test():
     result = dict(zip([m[0] for m in matches_sorted[:5]], [m[1]
                   for m in matches_sorted[:5]]))
     matchedIds = []
+    '''
     for matchId in result.keys():
         [userId, otherUserId] = str(matchId).split('_')
         client.execute(gql(create_match_query), variables=json.dumps({input: {
@@ -123,7 +127,9 @@ def test():
         matchedIds.append(otherUserId)
     client.execute(gql(update_user_query), variables=json.dumps({input: {
                    "id": userId, "matches": matchedIds}}))
+    '''
     # Returnign the top 5 matches in a dictionary
+
     return result
 
 

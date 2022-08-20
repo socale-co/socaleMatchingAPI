@@ -1,0 +1,178 @@
+Category,Sub-Category,Options
+Engineering,CE & EE,Electronics
+Engineering,CE & EE,Computer Hardware Systems
+Engineering,CE & EE,Distributed Computing
+Engineering,CE & EE,Robotics and Cybernetics
+Engineering,CE & EE,Embedded Systems
+Engineering,CE & EE,Computer Graphics
+Engineering,CE & EE,Signal Processing
+Engineering,CE & EE,Circuits
+Engineering,CE & EE,Energy Systems
+Engineering,CE & EE,Photonics
+Engineering,CE & EE,Electromagnetics
+Engineering,ME & SE,Mechatronics
+Engineering,ME & SE,Robotics
+Engineering,ME & SE,Structural Analysis
+Engineering,ME & SE,Vehicle engineering
+Engineering,ME & SE,Thermodynamics & Heat Transfer
+Engineering,ME & SE,Aerospace Engineering
+Engineering,ME & SE,Civil Engineering
+Engineering,ME & SE,Architecture
+Engineering,BioEngineering,Biomedical Engineering
+Engineering,BioEngineering,Biotechnology
+Engineering,BioEngineering,Nanotechnology
+Engineering,BioEngineering,Bioprocessing/Biochemical Engineering
+Engineering,BioEngineering,Biomechanical Engineering
+Business,Finance,Stocks
+Business,Finance,Investment Banking
+Business,Finance,Private Equity
+Business,Finance,Venture Capital
+Business,Finance,Risk Management
+Business,Finance,Entrepreneurship
+Business,Accounting,Managerial Accounting
+Business,Accounting,Financial Accounting
+Business,Accounting,Merchandising
+Business,Accounting,Insurance
+Business,Accounting,Actuarial
+Business,Consulting,Management Consulting
+Business,Consulting,Business Management
+Business,Consulting,Corporate Strategy
+Business,Consulting,Product Management
+Business,Consulting,Product Development
+Business,Economics,Economics
+Business,Economics,Econometrics
+Business,Economics,Employment
+Business,Economics,International Business
+Business,Economics,Foreign Exchange Market
+Business,Economics,Cryptocurrency
+Business,Economics,World Economy
+Business,Economics,Housing Market / Real Estate
+Business,Law & Ethics,Bankruptcy Law
+Business,Law & Ethics,Government Policy and Regulation
+Business,Law & Ethics,Intellectual Property
+Business,Law & Ethics,Underwriting
+Business,Advertising,Marketing
+Business,Advertising,Market Research
+Business,Advertising,Social Media
+Business,Advertising,Sales and Marketing
+Business,Advertising,Customer Strategy
+Humanities,Law,Constitutional Law
+Humanities,Law,Civil Rights Law
+Humanities,Law,Criminal Law
+Humanities,Law,Entertainment Law
+Humanities,Law,Environmental Law
+Humanities,Law,Family Law
+Humanities,Law,Health Law
+Humanities,Law,Immigration Law
+Humanities,Law,Employment Law
+Humanities,Law,Real Estate Law
+Humanities,Law,Tax Law
+Humanities,Teaching,Teaching
+Humanities,English & Foreign Languages,Linguistics
+Humanities,English & Foreign Languages,Creative Writing
+Humanities,English & Foreign Languages,Reading Writing & Communication
+Humanities,English & Foreign Languages,Literature
+Humanities,English & Foreign Languages,Foreign Language
+Humanities,English & Foreign Languages,Rhetoric
+Humanities,Art,Music
+Humanities,Art,Drawing
+Humanities,Art,Paiting
+Humanities,Art,Sculpting/Ceramics
+Humanities,Art,Dance
+Humanities,Art,Film/Video Production
+Humanities,Art,Fashion
+Humanities,Art,Photography
+Humanities,Art,Acting/Modeling
+Humanities,Art,Interior Design
+Humanities,Civics & Gov,Civil Rights & Activism
+Humanities,Civics & Gov,Non-Profits
+Humanities,Civics & Gov,Government & Politics
+Humanities,Civics & Gov,Volunteering
+Humanities,Civics & Gov,Social Welfare
+Humanities,Civics & Gov,Public Health
+Humanities,History,World History
+Humanities,History,American History
+Humanities,History,Journalist
+Humanities,History,Archaeology
+Humanities,History,Religion
+Humanities,History,Archaeolgy
+Humanities,History,Anthropology
+Humanities,History,Sociology
+Humanities,History,Ethnic Studies
+Humanities,History,Gender Studies
+Humanities,Philosophy,Theoretical Philosophy
+Humanities,Philosophy,Practical Philosophy
+Humanities,Philosophy,Philisophical Logic
+Humanities,Philosophy,History of Philosophy
+Humanities,Business,International Relations
+Humanities,Business,Human Resources
+Humanities,Business,Public Relations
+Humanities,Psychology,Clinical Psychology
+Humanities,Psychology,Psychiatrist
+Humanities,Psychology,Guidance Counseling
+Humanities,Psychology,Marriage Counseling
+Humanities,Psychology,Caseworker
+Humanities,Psychology,Customer Service
+Humanities,Psychology,Community Worker
+Tech,Computer Science,Cyber Security
+Tech,Computer Science,Video Game Development
+Tech,Computer Science,Blockchain Development
+Tech,Computer Science,Software Engineering
+Tech,Computer Science,IoT
+Tech,Computer Science,HCI
+Tech,Data Science,Data Analytics
+Tech,Data Science,Data Visualization
+Tech,Data Science,Data Engineering
+Tech,Data Science,Data Architect
+Tech,Data Science,Big Data
+Tech,Data Science,Data Mining
+Tech,Data Science,AI + Machine Learning
+Tech,Data Science,Cloud Computing
+Tech,Data Science,Quantitiative Finance
+Tech,Data Science,Bioinformatics
+Tech,Math,Algebra
+Tech,Math,Number Theory
+Tech,Math,Geometry
+Tech,Math,Arithmetic
+Tech,Math,Topology
+Tech,Math,Combinatorics
+Tech,Math,Statistics
+Tech,Math,Logic
+Tech,Creative Tech,UI Design
+Tech,Creative Tech,UX Research
+Tech,Creative Tech,Graphic Design
+Tech,Creative Tech,3D Asset Design
+Tech,Creative Tech,UX Design
+Science,Biology,Molecular Biology
+Science,Biology,Anatomy
+Science,Biology,Dentistry
+Science,Biology,Marine Biology
+Science,Biology,Genetics
+Science,Biology,Biophysics
+Science,Biology,Neuroscience
+Science,Biology,Medicine
+Science,Biology,Zoology
+Science,Biology,Ecology
+Science,Chemistry,Organic Chemistry
+Science,Chemistry,Biochemistry
+Science,Chemistry,Inorganic Chemistry
+Science,Chemistry,Analytical Chemistry
+Science,Chemistry,Physical Chemistry
+Science,Physics,Quantum Physics
+Science,Physics,Classical Physics & Mechanics
+Science,Physics,Optics
+Science,Physics,Thermodynamics
+Science,Physics,Relativity
+Science,Earth,Geology
+Science,Earth,Seismology
+Science,Earth,Astronomy
+Science,Earth,Mineralogy
+Science,Earth,Hydrogeology
+Science,Earth,Paleontology
+Science,Earth,Climatology
+Science,Earth,Environmental Science
+Science,Earth,Toxicology
+Science,Earth,Oceanography
+Science,Earth,Meteorology
+Science,Earth,Atmospheric Science
+Science,Earth,Geography

@@ -20,7 +20,7 @@ class Algo():
     #Academic Interests 
 
     #Reads csv file
-    academic_interests = pd.read_csv('academic_interests.csv').set_index('Options')
+    academic_interests = pd.read_csv('data_academic.csv').set_index('Options')
 
     #Academic Interest Vectorizer function takes a query and returns a embedded vector based on number of options
     #in each category
@@ -309,10 +309,16 @@ class Algo():
     # Calling final algo
 
     similarities = []
-    major_similarity_score = major_vectorizer(user1['major'][0],user2['major'][0])
-    if (major_similarity_score > 0.85):similarities.append(['Major: '+str(user2['major'][0])]) 
-    minor_similarity_score = minor_vectorizer(user1['minor'][0],user2['minor'][0])
-    if (minor_similarity_score > 0.95): similarities.append(['Minor: '+str(user1['minor'][0])]) 
+    if 'major' in user1.keys() and 'major' in user2.keys():
+        if len(user1['major'])>0 and len(user2['major'])>0:
+            major_similarity_score = major_vectorizer(user1['major'][0],user2['major'][0])
+            if (major_similarity_score > 0.85):similarities.append(['Major: '+str(user2['major'][0])])
+    if 'minor'  in user1.keys() and 'minor' in user2.keys():
+        if len(user1['minor'])>0 and len(user2['minors'])>0:
+            minor_similarity_score = minor_vectorizer(user1['minor'][0],user2['minor'][0])
+            if (minor_similarity_score > 0.95): similarities.append(['Minor: '+str(user1['minor'][0])])
+    
+         
     
     academic_interest_similarity = academic_interests_distance(user1['academicInterests'], user2['academicInterests'])
     nonacademic_interest_similarity = nonacademic_interests_distance(user1['leisureInterests'], user2['leisureInterests'])
